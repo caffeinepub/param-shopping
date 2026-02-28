@@ -1,0 +1,65 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-28T04:49:23.404Z",
+  "summary": "The diff implements most of the required features for the Param Shopping marketing app, including a landing page, warm visual theme, and backend marketing content endpoint. However, the backend stores incorrect app content (wrong app name 'Noxium AI' and unrelated features/tagline instead of Param Shopping content), which is a critical issue for REQ-3. All other requirements appear substantially implemented.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "Backend must store and expose marketing content for Param Shopping including correct app name, tagline, feature list, and CTA text",
+      "reason": "The backend in backend/main.mo stores content for a completely different app: appName is 'Noxium AI', tagline is 'AI-powered productivity suite for businesses', and features are 'Automated document processing', 'Smart scheduling', 'Data analysis tools' — none of which relate to Param Shopping. The frontend fallback in useQueries.ts does use 'Param Shopping' but the backend data is wrong.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/hooks/useQueries.ts"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "WhyUsSection component with stats row and benefits checklist",
+      "reason": "The build request only asked for a hero section, features/benefits section, CTA section, and footer. The WhyUsSection is an additional unrequested section.",
+      "evidence": [
+        "frontend/src/components/WhyUsSection.tsx",
+        "frontend/src/pages/LandingPage.tsx"
+      ]
+    },
+    {
+      "description": "App Store and Google Play download badges in the CTA section",
+      "reason": "The build request did not specify app store badges; it only asked for a generic CTA such as 'Download Now' or 'Get Started'.",
+      "evidence": [
+        "frontend/src/components/CTASection.tsx"
+      ]
+    },
+    {
+      "description": "Internet Identity authentication provider and login infrastructure",
+      "reason": "The build request explicitly lists user authentication and account management as a non-goal, yet useInternetIdentity.ts and the InternetIdentityProvider are included and wrapped around the entire app.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/main.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.88,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/CTASection.tsx",
+    "frontend/src/components/FeaturesSection.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/WhyUsSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/LandingPage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

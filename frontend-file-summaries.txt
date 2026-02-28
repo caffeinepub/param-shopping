@@ -1,0 +1,14 @@
+{
+  "frontend/index.html": "HTML entry point for Param Shopping with Google Fonts (Sora + Inter) preloaded for the warm e-commerce theme.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using warm coral-orange primary, sand secondary, and amber accent tokens for both light and dark modes; sets Sora for headings and Inter for body text.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Sora/Inter font families, warm shadow utilities (shadow-warm, shadow-warm-lg), additional border-radius tokens, and fade-up/fade-in keyframe animations.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook that fetches MarketingContent from the backend actor, with a safe fallback for unauthenticated/loading states.",
+  "frontend/src/components/SiteHeader.tsx": "Fixed top navigation bar with the Param Shopping logo, nav links, and a Download CTA button; uses backdrop blur for a polished sticky effect.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with the hero-banner background image, animated headline/tagline, dual CTA buttons, and social proof row.",
+  "frontend/src/components/FeaturesSection.tsx": "Responsive 3-column features grid that maps backend feature strings to icon-decorated cards with hover animations and a bottom-border reveal effect.",
+  "frontend/src/components/WhyUsSection.tsx": "Stats row (4 KPIs) plus a two-column layout with a shopping image and a benefits checklist, including a floating \"Order Placed\" card overlay.",
+  "frontend/src/components/CTASection.tsx": "Conversion-focused CTA section with star rating, headline, dual action buttons, and App Store / Google Play download badges.",
+  "frontend/src/components/SiteFooter.tsx": "Full-width footer with brand column, quick links, support links, contact info, social icons, copyright, app ID branding, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/LandingPage.tsx": "Main landing page that fetches marketing content via useMarketingContent, renders skeleton loading states, and composes all section components.",
+  "frontend/src/App.tsx": "Root app component that composes SiteHeader, LandingPage, and SiteFooter into a full-page layout."
+}

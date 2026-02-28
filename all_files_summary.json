@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor that defines and exposes a `MarketingContent` record (app name, tagline, features, CTA text) for 'Noxium AI' via a public query function.",
+  "feature_evidence.json": "Feature evidence report mapping two implemented features—the marketing landing page structure and the warm e-commerce visual theme—to their relevant source files and test IDs.",
+  "frontend-file-summaries.txt": "JSON document providing one-sentence descriptions of each frontend source file, serving as a quick reference for the project's component and page structure.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH-based CSS custom properties for light and dark color themes including background, foreground, primary, accent, and sidebar tokens.",
+  "frontend/index.html": "HTML entry point for the Param Shopping app that preloads Sora and Inter fonts from Google Fonts and mounts the React app via `main.tsx`.",
+  "frontend/src/App.tsx": "Root React component that composes SiteHeader, LandingPage, and SiteFooter into a full-height flex layout.",
+  "frontend/src/components/CTASection.tsx": "Conversion-focused CTA section displaying a star rating, headline, primary/secondary action buttons, and App Store/Google Play download badges.",
+  "frontend/src/components/FeaturesSection.tsx": "Responsive 3-column grid section that merges backend feature strings with icon-decorated cards and hover animations to highlight Param Shopping's key value propositions.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with a background banner image, animated headline/tagline using the app name and CTA text, dual action buttons, and a social proof emoji row.",
+  "frontend/src/components/SiteFooter.tsx": "Renders the site footer with brand info, social media links, quick links, support links, and contact details in a responsive 4-column grid layout.",
+  "frontend/src/components/SiteHeader.tsx": "Renders a fixed top navigation header with the Param Shopping logo, nav links to page sections, and a Download CTA button.",
+  "frontend/src/components/WhyUsSection.tsx": "Displays a 'Why Us' section with key stats (shoppers, products, uptime, rating), a hero image with a floating savings card, and a list of platform benefits.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and hook, managing AuthClient creation, login/logout flow, and persisting identity across page reloads.",
+  "frontend/src/hooks/useQueries.ts": "Exports a useMarketingContent hook that fetches marketing content from the ICP backend actor via React Query, with a fallback default value when no actor is available.",
+  "frontend/src/index.css": "Defines global Tailwind CSS styles and CSS custom properties for the design system's color tokens in both light and dark modes, using OKLCH color values.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/src/pages/LandingPage.tsx": "React page component that fetches marketing content via `useMarketingContent` hook and renders Hero, Features, WhyUs, and CTA sections, with skeleton loading and error states.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom fonts (Sora, Inter), oklch-based color tokens, border radii, box shadows, and animation keyframes, plus typography, container-queries, and animate plugins.",
+  "project_state.json": "Project state manifest for 'Param Shopping' (com.paramshopping.app) tracking schema version, existing features (landing page, visual theme), pending feature requests (dynamic backend content), and required image assets."
+}

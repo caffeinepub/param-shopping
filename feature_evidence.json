@@ -1,0 +1,46 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-marketing-landing-page-for-param-shopping-app-id-com-paramshopping-app-that-includes-a-hero-section-with-the-app-name-and-tagline-a-features-benefits-section-highlighting-the-shopping-app-s-key-value-propositions-a-call-to-action-section-e-g-download-now-or-get-started-and-a-footer-with-the-app-id-branding",
+      "featureTitle": "Create a marketing landing page for 'Param Shopping' (app ID: com.paramshopping.app) that includes a hero section with the app name and tagline, a features/benefits section highlighting the shopping app's key value propositions, a call-to-action section (e.g., 'Download Now' or 'Get Started'), and a footer with the app ID branding.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/CTASection.tsx",
+        "frontend/src/components/FeaturesSection.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/pages/LandingPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-vibrant-modern-e-commerce-visual-theme-to-the-marketing-app-using-warm-accent-colors-e-g-orange-red-coral-tones-clean-sans-serif-typography-and-a-layout-that-feels-energetic-and-trustworthy-enforce-the-theme-consistently-across-all-sections",
+      "featureTitle": "Apply a vibrant, modern e-commerce visual theme to the marketing app using warm accent colors (e.g., orange/red/coral tones), clean sans-serif typography, and a layout that feels energetic and trustworthy. Enforce the theme consistently across all sections.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
